@@ -9,6 +9,9 @@ var Page = require('../../components/page/www/page.jsx');
 var TitleBanner = require('../../components/title-banner/title-banner.jsx');
 var TTTTile = require('../../components/ttt-tile/ttt-tile.jsx');
 var Tiles = require('./microworlds.json');
+var Tiles = require('./projects.json');
+
+const basepath = 'http://localhost:8601';
 
 require('./microworldshomepage.scss');
 
@@ -27,12 +30,13 @@ var MicroworldsHomepage = injectIntl(React.createClass({
                 </TitleBanner>
                 <div className="inner">
                     <MasonryGrid >
-                        {Tiles.map(
-                            function (tile, key) {
+                        {Object.keys(Tiles).map(
+                            function (key) {
+                                var tile = Tiles[key];
                                 return <TTTTile
                                     key={key}
-                                    title={this.props.intl.formatMessage({id: tile.title})}
-                                    tutorialLoc={tile.tutorialLoc}
+                                    title={tile.title}
+                                    tutorialLoc={basepath + tile.tutorialLoc}
                                     thumbUrl={tile.thumbUrl}
                                     />;
                             }, this)
