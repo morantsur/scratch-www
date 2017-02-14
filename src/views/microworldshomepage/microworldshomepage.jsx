@@ -11,7 +11,7 @@ var TTTTile = require('../../components/ttt-tile/ttt-tile.jsx');
 var Tiles = require('./microworlds.json');
 var Tiles = require('./projects.json');
 
-const basepath = 'http://localhost:8601';
+const basepath = 'https://morantsur.github.io/scratch-gui';
 
 require('./microworldshomepage.scss');
 
@@ -33,6 +33,9 @@ var MicroworldsHomepage = injectIntl(React.createClass({
                         {Object.keys(Tiles).map(
                             function (key) {
                                 var tile = Tiles[key];
+                                if (!tile.title) {
+                                    return;
+                                }
                                 return <TTTTile
                                     key={key}
                                     title={tile.title}
