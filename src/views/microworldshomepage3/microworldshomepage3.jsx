@@ -8,12 +8,14 @@ var MasonryGrid = require('../../components/masonrygrid/masonrygrid.jsx');
 var Page = require('../../components/page/www/page.jsx');
 var TitleBanner = require('../../components/title-banner/title-banner.jsx');
 var TTTTile = require('../../components/ttt-tile/ttt-tile.jsx');
-var Tiles = require('./microworlds.json');
+var Tiles = require('./projects.json');
 
-require('./microworldshomepage.scss');
+const basepath = 'https://morantsur.github.io/scratch-gui';
 
-var MicroworldsHomepage = injectIntl(React.createClass({
-    type: 'MicroworldsHomepage',
+require('./microworldshomepage3.scss');
+
+var MicroworldsHomepage3 = injectIntl(React.createClass({
+    type: 'MicroworldsHomepage3',
     render: function () {
         return (
             <div className="microworlds">
@@ -27,12 +29,16 @@ var MicroworldsHomepage = injectIntl(React.createClass({
                 </TitleBanner>
                 <div className="inner">
                     <MasonryGrid >
-                        {Tiles.map(
-                            function (tile, key) {
+                        {Object.keys(Tiles).map(
+                            function (key) {
+                                var tile = Tiles[key];
+                                if (!tile.title) {
+                                    return;
+                                }
                                 return <TTTTile
                                     key={key}
-                                    title={this.props.intl.formatMessage({id: tile.title})}
-                                    tutorialLoc={'https://scratch.mit.edu' + tile.tutorialLoc}
+                                    title={tile.title}
+                                    tutorialLoc={basepath + tile.tutorialLoc}
                                     thumbUrl={tile.thumbUrl}
                                     />;
                             }, this)
@@ -44,4 +50,4 @@ var MicroworldsHomepage = injectIntl(React.createClass({
     }
 }));
 
-render(<Page><MicroworldsHomepage /></Page>, document.getElementById('app'));
+render(<Page><MicroworldsHomepage3 /></Page>, document.getElementById('app'));

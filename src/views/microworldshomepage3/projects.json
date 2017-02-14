@@ -44,7 +44,7 @@
 	{
 		"title": "Make Music 2",
 		"thumbUrl": "//cdn.scratch.mit.edu/static/site/projects/thumbnails/13386/5393.png",
-		"tutorialLoc": "/#music2",
+		"tutorialLoc": "/#music",
 
 		"targets":[
 			{"id":"cpa%][G(FzbjiS2Q0Pfk","name":"Stage","isStage":true,"x":0,"y":0,"size":100,"direction":90,"costume":{"skin":"https://cdn.assets.scratch.mit.edu/internalapi/asset/12288218b23a264c84bd3c22bd03e90a.svg/get/","name":"spotlight-stage2","bitmapResolution":1,"rotationCenterX":248,"rotationCenterY":181},"costumeCount":2,"currentCostume":1,"visible":true,"rotationStyle":"all around","blocks":{},"variables":{},"lists":{},"costumes":[{"skin":"https://cdn.assets.scratch.mit.edu/internalapi/asset/739b5e2a2435f6e1ec2993791b423146.png/get/","name":"backdrop1","bitmapResolution":1,"rotationCenterX":240,"rotationCenterY":180},{"skin":"https://cdn.assets.scratch.mit.edu/internalapi/asset/12288218b23a264c84bd3c22bd03e90a.svg/get/","name":"spotlight-stage2","bitmapResolution":1,"rotationCenterX":248,"rotationCenterY":181}],"sounds":[{"format":"","fileUrl":"https://cdn.assets.scratch.mit.edu/internalapi/asset/83a9787d4cb6f3b7632b4ddfebf74367.wav/get/","rate":11025,"sampleCount":258,"soundID":-1,"name":"pop","md5":"83a9787d4cb6f3b7632b4ddfebf74367.wav"}]},
