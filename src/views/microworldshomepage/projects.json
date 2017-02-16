@@ -26,7 +26,7 @@
 	},
 	"music":
 	{
-		"title": "Make Music",
+		"title": "Make Music (A)",
 		"thumbUrl": "//cdn.scratch.mit.edu/static/site/projects/thumbnails/14490/0710.png",
 		"tutorialLoc": "/#music",
 
@@ -42,7 +42,7 @@
 	},
 	"music2":
 	{
-		"title": "Make Music 2",
+		"title": "Make Music (B)",
 		"thumbUrl": "//cdn.scratch.mit.edu/static/site/projects/thumbnails/13386/5393.png",
 		"tutorialLoc": "/#music2",
 
@@ -61,7 +61,7 @@
 	},
 	"hiphop":
 	{
-		"title": "Hip Hop Dance",
+		"title": "Hip Hop Dance (A)",
 		"thumbUrl": "//cdn.scratch.mit.edu/static/site/projects/thumbnails/13386/5050.png",
 		"tutorialLoc": "/#hiphop",
 
@@ -76,7 +76,7 @@
 	 	"workspaceBlocks": ["event_whenflagclicked", "control_repeat", "math_whole_number", "looks_changeeffectby", "looks_effectmenu", "math_number", "control_wait", "math_positive_number", "looks_switchcostumeto", "looks_costume", "looks_cleargraphiceffects", "looks_seteffectto", "sound_playuntildone", "sound_sounds_menu"]
 	},
 	"hiphop2": {
-		"title": "Hip Hop Dance 2",
+		"title": "Hip Hop Dance (B)",
 		"thumbUrl": "//cdn.scratch.mit.edu/static/site/projects/thumbnails/13386/5050.png",
 		"tutorialLoc": "/#hiphop2",
 
